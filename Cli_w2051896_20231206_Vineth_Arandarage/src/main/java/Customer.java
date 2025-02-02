@@ -28,15 +28,12 @@ public class Customer implements Runnable {
         }
     }
 
+    /**
+     * return current time
+     * 
+     * @return
+     */
     private String getCurrentTimestamp() {
         return LocalDateTime.now().format(formatter);
     }
 }
-
-
-
-
-
-
-
-
