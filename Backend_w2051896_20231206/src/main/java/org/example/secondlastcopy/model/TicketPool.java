@@ -16,7 +16,7 @@ public class TicketPool {
         this.maxCapacity = maxCapacity;
         System.out.println("[" + getCurrentTimestamp() + "] TicketPool initialized with a capacity of " + maxCapacity);
     }
-
+    // add ticket method
     public synchronized void addTicket(Ticket ticket) {
         while (tickets.size() >= maxCapacity) {
             try {
