@@ -34,10 +34,10 @@ public class main {
             config.saveConfiguration();
         }
 
-        //  Initialize TicketPool
+        // Initialize TicketPool
         TicketPool ticketPool = new TicketPool(config.getMaxTicketCapacity());
 
-        //Create Vendor Threads
+        // Create Vendor Threads
         int vendorCount = 20; // Adjust vendor count as needed
         Vendor[] vendors = new Vendor[vendorCount];
         Thread[] vendorThreads = new Thread[vendorCount];
@@ -58,8 +58,7 @@ public class main {
         // Wait for "Start" Button
         System.out.println("\nType 'start' to begin the simulation:");
 
-
-        while(!scanner.nextLine().equalsIgnoreCase("start")) {
+        while (!scanner.nextLine().equalsIgnoreCase("start")) {
             System.out.println("Please type 'start' to begin the simulation.");
         }
 
@@ -87,11 +86,3 @@ public class main {
         scanner.close();
     }
 }
-
-
-
-
-
-
-
-
